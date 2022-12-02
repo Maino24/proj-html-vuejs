@@ -6,13 +6,6 @@
         <div>{{leftSide.phone}}</div>  
       </div>
     </div>
-    <div id="containerHeaderBottom">
-      
-    </div>
-     <div>
-        
-      </div>
-      
   </div>
 </template>
 
@@ -22,7 +15,7 @@ export default {
   props: {
   rightSide: String,
   leftSide: Object,
-  headerBottom: Object
+  
   }
 }
 </script>

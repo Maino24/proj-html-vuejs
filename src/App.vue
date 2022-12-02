@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderComp :rightSide="headerRightT" :leftSide="headerLeftT" :headerBottom="headerBottom"/>
+    <HeaderComp :rightSide="headerRightT" :leftSide="headerLeftT"/>
     <MainComp/>
     <FooterComp/>
   </div>
@@ -29,21 +29,7 @@ export default {
       headerLeftT: {
        phone: '+1 (305) 1234-5678',
        email: 'hello@example.com'
-      },
-
-      /* ARRAY HEADER INFERIORE */
-
-      headerBottom: {
-        nav: {
-          primo: 'HOME',
-          secondo: 'abou'
-        },
-        button1: '../assets/hover-button1.png'
-      } ,
-
-      
-
-
+      },  
        //es.  {name: 'Foo1', 'link': 'Bar1'}
     }
   }
