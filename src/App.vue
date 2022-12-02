@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComp from './components/HeaderComp.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderComp
   }
 }
 </script>
