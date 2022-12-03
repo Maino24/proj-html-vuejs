@@ -2,10 +2,16 @@
   <div class="containerHeader">
     <div id="containerHeaderTop">
       <div id="contattiHeader">
-        <div>{{rightSide}}</div>
-        <div>{{leftSide.phone}}</div>  
+        <div>{{headerTop.time}}</div>
+        <div>{{headerTop.phone}}</div>  
+        <div>{{headerTop.email}}</div>  
       </div>
     </div>
+
+    <div>
+      <div>{{headerBottom.name}}</div>
+    </div>
+
   </div>
 </template>
 
@@ -13,9 +19,8 @@
 export default {
   name: 'HeaderComp',
   props: {
-  rightSide: String,
-  leftSide: Object,
-  
+  headerTop: Object,
+  headerBottom: Array
   }
 }
 </script>

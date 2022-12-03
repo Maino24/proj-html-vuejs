@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderComp :rightSide="headerRightT" :leftSide="headerLeftT"/>
+    <HeaderComp :headerTop="headerTop"  :headerBottom="headerBottom"/>
     <MainComp/>
     <FooterComp/>
   </div>
@@ -22,15 +22,18 @@ export default {
   data(){
     return{
 
-      headerRightT: 'Open Hours: Mon - Sat - 9.00 - 18.00',
+      headerTop:{
+        time: 'Open Hours: Mon - Sat - 9.00 - 18.00',
+        phone: '+1 (305) 1234-5678',
+        email: 'hello@example.com'
+      } ,
       
       //icone
 
-      headerLeftT: {
-       phone: '+1 (305) 1234-5678',
-       email: 'hello@example.com'
-      },  
-       //es.  {name: 'Foo1', 'link': 'Bar1'}
+       headerBottom: [
+        {name: 'Foo1', link: 'Bar1'}
+       ]
+       //es.  
     }
   }
 }
