@@ -1,22 +1,23 @@
 <template>
-    <div>
-       <div>{{cardHeader.name}}</div>
+    <div class="">
+      <div>  
+        {{headerMenu.name}}
+      </div>
     </div>
 </template>
 
 <script>
-
-
-    export default {
-
+   export default {
         name: 'HeaderBottom',
 
-        props: {
-           cardHeader: Object
-        }
+        props:{
+            headerMenu: Array
+        }    
     }
 </script>
 
 <style lang="scss" scoped>
+
+
 
 </style>

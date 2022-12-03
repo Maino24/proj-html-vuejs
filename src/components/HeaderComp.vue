@@ -7,29 +7,34 @@
         <div>{{headerTop.email}}</div>  
       </div>
     </div>
-
-    <div>
-      <HeaderBottom v-for="(elem, index) in headerBottom"
-        :key="index"
-        :cardHeader="elem"/>
-    </div>
-
-  </div>
+ <!---   <HeaderBottom
+     v-for="(elem, index) in headerMenu" 
+     :key="index"
+     :headerMenu='elem'/>-->
+     <div id="containerHeaderBottom">
+      <div class="containerContent">
+        <img id="logoH" src="../assets/logo-light.png" alt="">
+        
+        <div>
+          <img id="logoH" src="../assets/hover-button1.png" alt="">
+        </div>
+      </div>
+     </div>
+  </div>  
 </template>
 
 <script>
-import HeaderBottom from '../components/headerBottom/HeaderBottom.vue'
 
 export default {
   name: 'HeaderComp',
 
   props: {
   headerTop: Object,
-  headerBottom: Array
+  headerMenu: Array
   },
   
   components: {
-    HeaderBottom
+
   }
 
 }
@@ -69,6 +74,20 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+
+
+  .containerContent{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #logoH{
+    width: 200px;
+    border: 2px solid black;
+  }
+
 }
 
 
