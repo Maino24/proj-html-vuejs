@@ -9,19 +9,29 @@
     </div>
 
     <div>
-      <div>{{headerBottom.name}}</div>
+      <HeaderBottom v-for="(elem, index) in headerBottom"
+        :key="index"
+        :cardHeader="elem"/>
     </div>
 
   </div>
 </template>
 
 <script>
+import HeaderBottom from '../components/headerBottom/HeaderBottom.vue'
+
 export default {
   name: 'HeaderComp',
+
   props: {
   headerTop: Object,
   headerBottom: Array
+  },
+  
+  components: {
+    HeaderBottom
   }
+
 }
 </script>
 
