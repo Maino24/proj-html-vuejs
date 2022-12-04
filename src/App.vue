@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <HeaderComp :headerTop="headerTop"  :headerMenu="headerMenu"/>
-    <MainComp/>
+    <MainComp   :sec2="arraySec2"/>
     <FooterComp/>
+    <SecDueComp/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import HeaderComp from './components/HeaderComp.vue'
 import MainComp from './components/MainComp.vue'
 import FooterComp from './components/FooterComp.vue'
+import SecDueComp from './components/section/SecDueComp.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderComp,
     MainComp,
-    FooterComp
+    FooterComp, 
+    SecDueComp
   },
 
   data(){
@@ -35,7 +38,7 @@ export default {
         {name: 'PRICING'},
         {name: 'BLOG'},
 
-      ]
+      ],
       
       //icone
 
@@ -55,6 +58,14 @@ export default {
      //   {name: 'Foo1', link: '../asstes/hero-image.png'}
       // ]
        //es.  
+
+
+       /* ----- ARRAY SECONDA SEZIONE ----- */
+       arraySec2:[
+          {name: 'Human Capital', paragrafo: 'Humanizing  business: Harness the power of technology to improve the way people work.'},
+          {name: 'Core Business', paragrafo: 'Ita takes innovative approaches to transform, modernize, and run existig platforms.'},
+          {name: 'Performance', paragrafo: 'Achieving maximum impact and value from investments in finance and supply chain.'}
+       ]
     }
   }
 }
