@@ -65,6 +65,26 @@
    
     <!--- SEC. SETTE -->
     <SecSetteComp/>
+
+    <!--- SEC. OTTO -->
+    <div class="backgroundOtto">
+      <div class="containerOtto">
+        <div class="colonnaSinistra8">
+          <img class="logoImg" src="../assets/logo-light.png" alt="">
+          <div class="divSpace1">A Functional HTML Template for Corporate & Business.</div>
+          <div class="divSpace">+1 (305) 1234-5678</div>
+          <div class="divSpace">hello@example.com</div>
+          <div class="divSpace">Main Avenue, 987</div>
+          <button class="button8">GET IN TOUCH</button>       
+        </div>
+        <div class="colonnaDestra8">
+          <SecOttoComp v-for="(elem, index) in arraySecOtto"
+              :key="index"
+              :arrayCardSecOtto="elem"/>
+        </div>
+      </div>
+    </div>
+    
    
 
   </div> 
@@ -78,7 +98,8 @@ import SecTreComp from '../components/SecTreComp.vue'
 import SecQuattroComp from '../components/SecQuattroComp.vue'
 import SecCinqueComp from '../components/SecCinqueComp.vue'
 import SecSeiComp from '../components/SecSeiComp.vue'
-import SecSetteComp from './SecSetteComp.vue'
+import SecSetteComp from '../components/SecSetteComp.vue'
+import SecOttoComp from '../components/SecOttoComp.vue'
 
 export default {
   name: 'MainComp',
@@ -93,6 +114,7 @@ export default {
     SecCinqueComp,
     SecSeiComp,
     SecSetteComp,
+    SecOttoComp
   },
   data( ){
     return{
@@ -124,6 +146,11 @@ export default {
           {img: 'news-1.jpg', name: 'Increasing creativity is possible for everyone', person: 'Andrea Miller', day: '2 Days Ago', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',},
           {img: 'news-2.jpg', name: 'Because market research is part of the business plan', person: 'Andrea Miller', day: '2 Days Ago', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
           {img: 'news-3.jpg', name: 'Working from home is now a trend', person: 'Andrea Miller', day: '2 Days Ago', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
+       ],
+       arraySecOtto:[
+          {name: 'About', li1: 'The Company', li2: 'Institutional', li3: 'Social & Events', li4: 'Innovation', li5: 'Environment', li6: 'Technology' },
+          {name: 'Services', li1: 'Audit & Assurance', li2: 'Financial Advisory', li3: 'Analystics M&A', li4: 'Middle Marketing', li5: 'Legal Consulting', li6: 'Regulatory Risk'},
+          {name: 'Support', li1: 'Responsibility', li2: 'Terms of Use', li3: 'About Cookies', li4: 'Privacy Policy', li5: 'Accessibility', li6: 'Information'},
        ],
     }
   }
@@ -246,8 +273,50 @@ export default {
 
     }
   }
-  /*-- SEC. CINQUE --*/
-  
+  /*-- SEC. OTTO --*/
+  .backgroundOtto{
+    background-color: rgba(17, 17, 23, 1);
+    padding: 200px 0;
+    .containerOtto{
+      width: 60%;
+      height: 300px;
+      //border: 1px solid white;
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+
+      .colonnaSinistra8{
+        width: 30%;
+        color: white;
+
+        .divSpace1{
+          padding: 25px 0;
+        }
+
+        .divSpace{
+          padding-top: 10px;
+        }
+        
+        .logoImg{
+          width: 80%;
+        }
+         .button8{
+          border: 2px solid rgba(5, 130, 131, 1);
+          border-radius: 5px;
+          padding: 10px 20px;
+          background-color: rgba(17, 17, 23, 1);
+          color: white;
+          margin-top: 40px;
+          margin-bottom: 0;
+        }
+      }
+      .colonnaDestra8{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
  
  
 }
