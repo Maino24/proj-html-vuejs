@@ -11,7 +11,6 @@
 import HeaderComp from './components/HeaderComp.vue'
 import MainComp from './components/MainComp.vue'
 import FooterComp from './components/FooterComp.vue'
-import SecDueComp from './components/section/SecDueComp.vue'
 
 export default {
   name: 'App',
@@ -19,7 +18,7 @@ export default {
     HeaderComp,
     MainComp,
     FooterComp, 
-    SecDueComp
+    
   },
 
   data(){
@@ -61,11 +60,7 @@ export default {
 
 
        /* ----- ARRAY SECONDA SEZIONE ----- */
-       arraySec2:[
-          {name: 'Human Capital', paragrafo: 'Humanizing  business: Harness the power of technology to improve the way people work.'},
-          {name: 'Core Business', paragrafo: 'Ita takes innovative approaches to transform, modernize, and run existig platforms.'},
-          {name: 'Performance', paragrafo: 'Achieving maximum impact and value from investments in finance and supply chain.'}
-       ]
+      
     }
   }
 }

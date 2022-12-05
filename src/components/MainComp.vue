@@ -1,24 +1,35 @@
 <template>
-  <div class="sec2back">
-    <SecDueComp v-for="(elem, index) in arraySec2"
-    :key="index"
-    :cardSec2='elem'/>
-    
-  </div>
+  <div class="containerMain">
+    <div class="backgroundSecUno"> 
+      <div class="cardSecUno">
+        <SecUnoComp v-for="(elem, index) in arraySecUno"
+        :key="index"
+        :arrayCardSecUno="elem"/>
+      </div>
+    </div>
+  </div> 
 </template>
 
 <script>
 
-import SecDueComp from './section/SecDueComp.vue'
-
+import SecUnoComp from '../components/SecUnoComp.vue'
 
 export default {
   name: 'MainComp',
   props: {
-   arraySec2: Array
+
   },
   components:{
-    SecDueComp
+    SecUnoComp
+  },
+  data( ){
+    return{
+       arraySecUno:[
+          {name: 'Human Capital', paragrafo: 'Humanizing  business: Harness the power of technology to improve the way people work.'},
+          {name: 'Core Business', paragrafo: 'Ita takes innovative approaches to transform, modernize, and run existig platforms.'},
+          {name: 'Performance', paragrafo: 'Achieving maximum impact and value from investments in finance and supply chain.'}
+       ]
+    }
   }
 }
 </script>
@@ -32,10 +43,23 @@ export default {
   box-sizing: border-box;
 }
 
-.sec2back{
-  background-color: purple;
-  height: 100px;
+.containerMain{
+  width: 100%;
+
+  .backgroundSecUno{
+    background-color: rgba(238, 244, 237, 1);
+
+    .cardSecUno{
+      width: 60%;
+      margin: auto;
+      display: flex;
+      text-align: center;
+      padding: 30px 0;
+    }
+  }
+  
 }
+
 
 
 </style>
