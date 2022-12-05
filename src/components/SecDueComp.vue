@@ -27,11 +27,11 @@
   box-sizing: border-box;
 }
 .containerCards{
-    
-    border: 1px solid black;
-  .cardSecDue2{
-   
-}
+    width: calc(100% / 2);
+    //border: 1px solid black;
+    margin-top: 40px;
+    padding-right: 20px;
+  
 }
 
 </style>

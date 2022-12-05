@@ -86,8 +86,6 @@ export default {
       }
   }
 
-  /*-- SEC. DUE --*/
-
   .backgroundSecDue{
     width: 100%;
     display: flex;
@@ -97,17 +95,15 @@ export default {
       width: calc(100% / 2);
       //height: 600px;
       text-align: left;
-      padding: 150px 0;
+      padding: 130px 0;
       padding-left: 200px;
       padding-right: 20px;
-
+      
       .cardSecDue{
         display: flex;
         margin: auto;
         //width: calc(100% / 2);
         flex-wrap: wrap;
-        padding-right: 20px;
-        margin-top: 40px
       }
 
     }
