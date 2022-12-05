@@ -32,9 +32,9 @@ width: calc(100% / 3);
 background-color: white;
 //border: 1px solid black;
 border-radius: 10px;
-text-align: center;
+text-align: left;
 margin: 0 20px;
-padding: 20px;
+padding: 25px;
 /* --------------- INSERIRE ICONE ------------------*/
 }
 
