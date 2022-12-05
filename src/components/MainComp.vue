@@ -58,60 +58,14 @@
     </div>
 
     <!--- SEC. CINQUE -->
-    <div class="backgroundSecCinque">
-      <div class="cardSecCinque5">
-        <h5 class="our">OUR EDITORIAL CONTENT</h5>
-        <h2>Latest News</h2>
-        <div class="pb5">
-          <p class="p5">Every week we publish content what is best in the business world.</p>  
-          <button class="b5">SEE ALL</button>    
-        </div> 
-        <div class="containerCardSecCinque">
-          <div class="cardSecCinque1">
-            <h4 class="parag">Increasing creativity is possible for everyone</h4>
-        <!--- <SecCinqueComp v-for="(elem, index) in arraySecCinque"
-                :key="index"
-                :arrayCardSecCinque="elem"/>-->
-          </div>
-          <div class="cardSecCinque2">
-            <h4 class="parag">Because market research is part of the business plan</h4>
-  
-          </div>
-          <div class="cardSecCinque3">
-            <h4 class="parag">Working from home is now a trend</h4>
-          </div>
-        </div> 
-      </div>
-    </div>
-    <!--- SEC. SEI -->
-    <SecSetteComp/>
-   <!--- <div class="backgroundSecSei">
-      <div class="cardSecSei6"> 
-        <div class="colonnaSinistra5">
-          <h5 class="our">SEND A MESSAGE</h5>
-          <h2>Get in Touch</h2>
-          <div>We will respond to your message as soon as possible.</div>
-        </div>
-        <div class="colonnaDestra5">
-          <h3>Example Inc.</h3>
-          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-          <div>Prasent diam lacus, dapibus sed impredit consectetur.</div>
-          <div class="contatti">
-            <div>
-              <span>+1 (305) 1234-5678</span>
-            </div>
-            <div>
-              <span>hello@example.com</span>
-            </div>
-            <div>
-              <span>Main Avenue, 987</span>
-            </div>
-          </div>
-          <button class="buttonView">VIEW MAP</button>
-        </div>
-      </div>
-    </div>-->
+    <SecCinqueComp/>
 
+    <!--- SEC. SEI -->
+    <SecSeiComp/>
+   
+    <!--- SEC. SETTE -->
+    <SecSetteComp/>
+   
 
   </div> 
 </template>
@@ -122,7 +76,8 @@ import SecUnoComp from '../components/SecUnoComp.vue'
 import SecDueComp from '../components/SecDueComp.vue'
 import SecTreComp from '../components/SecTreComp.vue'
 import SecQuattroComp from '../components/SecQuattroComp.vue'
-//import SecCinqueComp from '../components/SecCinqueComp.vue'
+import SecCinqueComp from '../components/SecCinqueComp.vue'
+import SecSeiComp from '../components/SecSeiComp.vue'
 import SecSetteComp from './SecSetteComp.vue'
 
 export default {
@@ -135,7 +90,8 @@ export default {
     SecDueComp,
     SecTreComp,
     SecQuattroComp,
-    //SecCinqueComp,
+    SecCinqueComp,
+    SecSeiComp,
     SecSetteComp,
   },
   data( ){
@@ -291,80 +247,7 @@ export default {
     }
   }
   /*-- SEC. CINQUE --*/
-  .backgroundSecCinque{
-
-    .cardSecCinque5{
-      width: 60%;
-      margin: auto;
-      margin-bottom: 70px;
-      .our{
-      color: rgba(7, 155, 168, 1);
-    }
-      .pb5{
-        display: flex;
-        justify-content: space-between;
-        
-        .b5{
-          height: 20%;
-          padding: 10px 20px;
-          border-radius: 5px;
-          background-color: rgba(5, 130, 131, 1);
-          color: white;
-        }
-      }
-
-    .containerCardSecCinque{
-      display: flex;
-      justify-content: space-between;
-      margin-top: 30px;
-    .cardSecCinque1{
-      height: 300px;
-      background-image: url(../assets/images/news-1.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: calc(100% / 3);
-      color: white;
-      border-radius: 15px;
-      .parag{
-        padding-left: 20px;
-        padding-top: 200px;
-        font-size: 1.5rem;
-      }
-      }
-      .cardSecCinque2{
-        height: 300px;
-      background-image: url(../assets/images/news-2.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: calc(100% / 3);
-      color: white;
-      margin: 0 20px;
-      border-radius: 15px;
-      .parag{
-        padding-left: 20px;
-        padding-top: 180px;
-        font-size: 1.5rem;
-      }
-      }
-      .cardSecCinque3{
-        height: 300px;
-      background-image: url(../assets/images/news-3.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: calc(100% / 3);
-      color: white;
-      border-radius: 15px;
-      .parag{
-        padding-left: 20px;
-        padding-top: 200px;
-        font-size: 1.5rem;
-      }
-      }
-    }
-      
-
-    }
-  }
+  
  
  
 }

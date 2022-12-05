@@ -6,10 +6,10 @@
                 <h2>Get in Touch</h2>
                 <div>We will respond to your message as soon as possible.</div>
                 <div class="containerInput">
-                    <input class="inputMargin" type="text" placeholder="Name">
-                    <input type="text" placeholder="Email">
-                    <input class="inputMargin" type="text" placeholder="Phone">
-                    <input type="text" placeholder="More Info">
+                    <input class="input7 inputMargin" type="text" placeholder="Name">
+                    <input class="input7" type="text" placeholder="Email">
+                    <input class="input7 inputMargin" type="text" placeholder="Phone">
+                    <input class="input7" type="text" placeholder="More Info">
                     
                 </div>
                 <input class="inputMessage" type="text" placeholder="Message">
@@ -63,7 +63,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 30px;
-        input{
+        .input7{
             flex-basis: 45%;
             border: 1px solid black;
             margin: 10px 0;
