@@ -44,22 +44,18 @@ export default {
 }
 
 .containerMain{
-  width: 100%;
-
-  .backgroundSecUno{
-    background-color: rgba(238, 244, 237, 1);
-
-    .cardSecUno{
-      width: 60%;
-      margin: auto;
-      display: flex;
-      text-align: center;
-      padding: 30px 0;
-    }
-  }
   
 }
 
+ .backgroundSecUno{
+    background-color: rgba(238, 244, 237, 1);  
+  }
 
+ .cardSecUno{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    padding: 60px 0;
+  }
 
 </style>

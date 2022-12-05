@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <HeaderComp :headerTop="headerTop"  :headerMenu="headerMenu"/>
-    <MainComp   :sec2="arraySec2"/>
+    <MainComp/>
     <FooterComp/>
-    <SecDueComp/>
   </div>
 </template>
 
