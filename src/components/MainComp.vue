@@ -43,7 +43,34 @@
       </div>
     </div>
 
+    <!--- SEC. QUATTRO -->
+    <div class="backgroundSecQuattro">
+      <div class="cardSecQuattro4">
+        <h5 id="">MONTHLY PLANS</h5>
+        <h2>Pricing Table</h2>
+        <p class="">We can help you deliver and execute your future, wherever you compete, using the latest technologies, from strategy development to implementation.</p>        
+        <div class="cardSecQuattro">
+        <SecQuattroComp v-for="(elem, index) in arraySecQuattro"
+              :key="index"
+              :arrayCardSecQuattro="elem"/>
+        </div>
+      </div>
+    </div>
 
+    <!--- SEC. CINQUE -->
+    <div class="backgroundSecCinque">
+      <div class="cardSecCinque5">
+        <h5 id="">OUR EDITORIAL CONTENT</h5>
+        <h2>Latest News</h2>
+        <p class="">Every week we publish content what is best in the business world.</p>  
+        <button>SEE ALL</button>      
+        <div class="cardSecCinque">
+        <SecCinqueComp v-for="(elem, index) in arraySecCinque"
+              :key="index"
+              :arrayCardSecCinque="elem"/>
+        </div>
+      </div>
+    </div>
 
   </div> 
 </template>
@@ -53,6 +80,8 @@
 import SecUnoComp from '../components/SecUnoComp.vue'
 import SecDueComp from '../components/SecDueComp.vue'
 import SecTreComp from '../components/SecTreComp.vue'
+import SecQuattroComp from '../components/SecQuattroComp.vue'
+import SecCinqueComp from '../components/SecCinqueComp.vue'
 
 export default {
   name: 'MainComp',
@@ -62,7 +91,9 @@ export default {
   components:{
     SecUnoComp,
     SecDueComp,
-    SecTreComp
+    SecTreComp,
+    SecQuattroComp,
+    SecCinqueComp
   },
   data( ){
     return{
@@ -84,6 +115,16 @@ export default {
           {name: 'Midlle Marketing', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
           {name: 'Legal Consulting', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
           {name: 'Regulatory Risk', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
+       ],
+       arraySecQuattro:[
+          {name: 'Standart', price: ' 490'},
+          {name: 'Professional', price: ' 890'},
+          {name: 'Ultimate', price: ' 1.390'},
+       ],
+       arraySecCinque:[
+          {img: 'news-1.jpg', name: 'Increasing creativity is possible for everyone', person: 'Andrea Miller', day: '2 Days Ago', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',},
+          {img: 'news-2.jpg', name: 'Because market research is part of the business plan', person: 'Andrea Miller', day: '2 Days Ago', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
+          {img: 'news-3.jpg', name: 'Working from home is now a trend', person: 'Andrea Miller', day: '2 Days Ago', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
        ],
     }
   }
@@ -191,8 +232,28 @@ export default {
     }
 
   }
-  
+  /*-- SEC. QUATTRO --*/
+  .backgroundSecQuattro{
 
+    background-color: rgba(238, 244, 237, 1);
+
+    .cardSecQuattro4{
+      width: 60%;
+      margin: auto;
+
+      .cardSecQuattro{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      
+
+      }
+
+    }
+  /*-- SEC. CINQUE --*/
+    
+
+  }
  
 }
 </style>
