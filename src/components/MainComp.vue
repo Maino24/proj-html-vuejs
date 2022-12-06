@@ -2,18 +2,18 @@
   <div class="containerMain">
 
     <!--- SEC. UNO -->
-    <SecUnoComp/>
-   <!--- <div class="backgroundSecUno"> 
+    
+   <div class="backgroundSecUno"> 
       <div class="cardSecUno">
-        <SecUnoComp v-for="(elem, index) in arraySecUno"
-        :key="index"
-        :arrayCardSecUno="elem"/>
+          <SecUnoComp v-for="(elem, index) in arraySecUno"
+          :key="index"
+          :arrayCardSecUno="elem"/>
       </div>
-    </div>-->
+    </div>
 
     <!--- SEC. DUE -->
+    
     <div class="backgroundSecDue">
-      
         <div class="colonnaSinistra">
           <div class="widthSinistra">
             <h5 class="our">ABOUT THE NETWORK</h5>
@@ -26,9 +26,7 @@
             </div>
           </div>
         </div>
-      
       <div class="colonnaDestra">
-        
       </div>
     </div> 
 
@@ -129,9 +127,9 @@ export default {
   data( ){
     return{
        arraySecUno:[
-          {font: 'fa-solid fa-users', name: 'Human Capital', paragrafo: 'Humanizing  business: Harness the power of technology to improve the way people work.'},
-          {font: 'fa-regular fa-circle', name: 'Core Business', paragrafo: 'Ita takes innovative approaches to transform, modernize, and run existig platforms.'},
-          {font: 'fa-solid fa-gauge', name: 'Performance', paragrafo: 'Achieving maximum impact and value from investments in finance and supply chain.'}
+          {name: 'Human Capital', paragrafo: 'Humanizing  business: Harness the power of technology to improve the way people work.', icona: 'fa-solid fa-users'},
+          {name: 'Core Business', paragrafo: 'Ita takes innovative approaches to transform, modernize, and run existig platforms.', icona: 'fa-solid fa-circle'},
+          {name: 'Performance', paragrafo: 'Achieving maximum impact and value from investments in finance and supply chain.', icona: 'fa-solid fa-gauge'}
        ],
        arraySecDue:[
           {name: 'Tradition', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-medal'},
@@ -181,16 +179,25 @@ export default {
   width: 100%;
 
   /*-- SEC. UNO --*/
- /* .backgroundSecUno{
+  .backgroundSecUno{
       background-color: rgba(238, 244, 237, 1);  
-
+      padding: 100px 0;
       .cardSecUno{
+        //border: 1px solid black;
         width: 60%;
         margin: auto;
         display: flex;
-        padding: 60px 0;
+        justify-content: space-between;
       }
-  }*/
+      /*.cardSecUno{
+        width: 60%;
+        margin: auto;
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-between;
+      }*/
+  }
+
   /*-- SEC. DUE --*/
   .backgroundSecDue{
     width: 100%;

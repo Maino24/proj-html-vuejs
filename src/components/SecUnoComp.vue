@@ -1,29 +1,9 @@
 <template>
-    <div>
-        <div class="backgroundSecUno"> 
-            <div class="cardSecUno">
-                
-                <h2>Human Capital</h2>
-                <div>Humanizing  business: Harness the power of technology to improve the way people work.</div>
-            </div>
-            <div class="cardSecUno">
-                <h2>{{arrayCardSecUno.name}}</h2>
-                <div>{{arrayCardSecUno.paragrafo}}</div>
-            </div>
-            <div class="cardSecUno">
-                <h2>{{arrayCardSecUno.name}}</h2>
-                <div>{{arrayCardSecUno.paragrafo}}</div>
-            </div>
+        <div class="cardSecUno1">       
+            <i class="icona" :class="`${arrayCardSecUno.icona}`"></i>
+            <h2>{{arrayCardSecUno.name}}</h2>
+            <div class="p">{{arrayCardSecUno.paragrafo}}</div>
         </div>
-        
-    </div>
-
- <!---   <div class="cardSecUno1">       
-        
-        <h2>{{arrayCardSecUno.name}}</h2>
-        <div>{{arrayCardSecUno.paragrafo}}</div>
-        
-    </div>-->
 </template>
 
 <script>
@@ -31,9 +11,9 @@
     export default {
         name: 'SecUnoComp',
 
-       /* props: {
+        props: {
             arrayCardSecUno: Object
-        }*/
+        }
 
     }
 
@@ -45,26 +25,31 @@
   border: 0;
   box-sizing: border-box;
 }
-
-.backgroundSecUno{
-      background-color: rgba(238, 244, 237, 1);  
-
-      .cardSecUno{
-        width: 60%;
-        margin: auto;
-        display: flex;
-        padding: 60px 0;
-      }
-}
 .cardSecUno1{
-width: calc(100% / 3);
-background-color: white;
-//border: 1px solid black;
-border-radius: 10px;
-text-align: left;
-margin: 0 20px;
-padding: 25px;
-/* --------------- INSERIRE ICONE ------------------*/
+    background-color: white;
+    width: calc((100% / 3) - 10px);
+    padding: 40px;
+    border-radius: 5px;
 }
+.p{
+    color: rgb(134, 135, 142);
+}
+.icona{
+    font-size: 1.5rem ; 
+    color: rgba(7, 155, 168, 1);
+    background-color: rgba(218, 236, 237, 1);
+    padding: 10px;
+    border-radius: 50%;
+}
+/*.cardSecUno1{
+    width: calc(100% / 3);
+    background-color: white;
+    //border: 1px solid black;
+    border-radius: 10px;
+    //text-align: left;
+    //margin: 0 20px;
+    //padding: 25px;
+
+}*/
 
 </style>
