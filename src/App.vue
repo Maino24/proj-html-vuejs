@@ -43,7 +43,7 @@ export default {
         year: '2020 NEXGEN is Proudly powered by ',
         codings: 'Codingds',
         point: '.'
-      }
+      },
       
       //icone
 
@@ -59,9 +59,7 @@ export default {
         button3: '../assets/hover-button3.png'
       },*/
 
-    //   headerBottom: [
-     //   {name: 'Foo1', link: '../asstes/hero-image.png'}
-      // ]
+       
        //es.  
 
 

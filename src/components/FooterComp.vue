@@ -41,9 +41,6 @@ export default {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    .colonnaSinistraFooter{
-
-  }
   .colonnaDestraFooter{
     .word{
       color: rgba(5, 130, 131, 1);

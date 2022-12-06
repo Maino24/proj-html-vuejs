@@ -7,23 +7,33 @@
         <div>{{headerTop.email}}</div>  
       </div>
     </div>
- <!---   <HeaderBottom
-     v-for="(elem, index) in headerMenu" 
-     :key="index"
-     :headerMenu='elem'/>-->
-     <div id="containerHeaderBottom">
+    <div id="containerHeaderBottom">
       <div class="containerContent">
         <img id="logoH" src="../assets/logo-light.png" alt="">
         
-        <div>
-          <img id="logoH" src="../assets/hover-button1.png" alt="">
+        <div class="contaierLista">
+          <HeaderBottom
+            v-for="(elem, index) in headerMenu" 
+            :key="index"
+            :headerMenu='elem'/>
+        
+        <button class="buttonGet">GET IN TOUCH</button>
         </div>
       </div>
+      <div class="containerInferiore">
+        <h1><b>Lead Costumer</b></h1>
+        <p>Successful strategies require data analysis, creativity and costumer focus, taking advantage of the latest technologies to offer excellent services.</p>
+        <button class="buttonGet">GET IN TOUCH</button>
+        <button class="buttonRead">READ MORE</button>
+      </div>
      </div>
+     
   </div>  
 </template>
 
 <script>
+
+import HeaderBottom from '../components/HeaderBottom.vue'
 
 export default {
   name: 'HeaderComp',
@@ -34,7 +44,7 @@ export default {
   },
   
   components: {
-
+    HeaderBottom
   }
 
 }
@@ -52,8 +62,6 @@ export default {
 #containerHeaderTop{
   width: 100%;
   height: 50px;
-  
-  
   background-color: rgba(33, 51, 62, 1);
   color: #e3e7df;
 
@@ -69,23 +77,65 @@ export default {
 }
 
 #containerHeaderBottom{
-  height: 600px;
-  background-image: url(../assets/hero-image.png);
+  //height: 600px;
+  background: rgba(0,0,0,0.7)url(../assets/hero-image.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-
+  //filter: brightness(80%);
+ background-blend-mode: darken;
+ 
 
   .containerContent{
     width: 60%;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    .buttonGet{
+      color: white;
+      background-color: rgba(5, 130, 131, 1);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
   }
 
   #logoH{
-    width: 200px;
-    border: 2px solid black;
+    width: 150px;
+    //border: 2px solid black;
+  }
+
+  .contaierLista{
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+    padding-left: 100px;
+  }
+  .containerInferiore{
+    width: 60%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding-bottom: 250px;
+    .buttonGet{
+      color: white;
+      background-color: rgba(5, 130, 131, 1);
+      padding: 12px 20px;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+    .buttonRead{
+      color: white;
+      background: none;
+      border: 3px solid rgba(5, 130, 131, 1);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    h1{
+      font-size: 3rem;
+    }
   }
 
 }
