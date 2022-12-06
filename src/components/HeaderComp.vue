@@ -2,10 +2,16 @@
   <div class="containerHeader">
     <div id="containerHeaderTop">
       <div id="contattiHeader">
-        <div>{{headerTop.time}}</div>
-        <div>{{headerTop.phone}}</div>  
-        <div>{{headerTop.email}}</div> 
-        <i class="fa-solid fa-magnifying-glass"></i> 
+        <div> 
+          <div><span class="space"><i class="fa-solid fa-clock"></i></span>{{headerTop.time}}</div>
+        </div>
+        <div class="contattiRight">
+          <div><span class="space"><i class="fa-solid fa-phone"></i></span>{{headerTop.phone}}</div>  
+          <div><span class="space"><i class="fa-solid fa-envelope"></i></span>{{headerTop.email}}</div> 
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
       </div>
     </div>
     <div id="containerHeaderBottom">
@@ -35,10 +41,7 @@
 <script>
 
 import HeaderBottom from '../components/HeaderBottom.vue'
-/* import specific icons */
-  
-
-  
+ 
 
 export default {
   name: 'HeaderComp',
@@ -71,12 +74,21 @@ export default {
   color: #e3e7df;
 
   #contattiHeader{
-    width: 50%;
+    width: 60%;
     display: flex;
     margin: auto;
     justify-content: space-between;
     padding: 15px 0;
     
+  }
+  .contattiRight{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+  }
+  .space{
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
 }
@@ -137,18 +149,26 @@ export default {
     }
 
     .parag{
-      padding: 0 150px;
+      padding: 0 140px;
       padding-bottom: 40px;
+      font-size: 1.2rem;
     }
     .buttonRead{
       color: white;
       background: none;
       border: 3px solid rgba(5, 130, 131, 1);
-      padding: 10px 20px;
+      padding: 12px 20px;
       border-radius: 5px;
     }
+    .buttonRead:hover{
+      color: white;
+      background-color: rgba(5, 130, 131, 1);
+      //padding: 15px 20px;
+      border-radius: 5px;
+      
+    }
     h1{
-      font-size: 4rem;
+      font-size: 5rem;
       font-weight: bold;
     }
   }
