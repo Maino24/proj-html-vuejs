@@ -1,6 +1,6 @@
 <template>
         <ul class="cl">
-            <b><li class="lista">{{headerMenu.name}}</li></b>
+            <li class="lista">{{headerMenu.name}}</li>
         </ul>
 </template>
 

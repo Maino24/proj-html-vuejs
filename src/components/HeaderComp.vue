@@ -4,7 +4,8 @@
       <div id="contattiHeader">
         <div>{{headerTop.time}}</div>
         <div>{{headerTop.phone}}</div>  
-        <div>{{headerTop.email}}</div>  
+        <div>{{headerTop.email}}</div> 
+        <i class="fa-solid fa-magnifying-glass"></i> 
       </div>
     </div>
     <div id="containerHeaderBottom">
@@ -21,8 +22,8 @@
         </div>
       </div>
       <div class="containerInferiore">
-        <h1><b>Lead Costumer</b></h1>
-        <p>Successful strategies require data analysis, creativity and costumer focus, taking advantage of the latest technologies to offer excellent services.</p>
+        <h1>Lead <span class="wordBack">Costumer</span></h1>
+        <p class="parag">Successful strategies require data analysis, creativity and costumer focus, taking advantage of the latest technologies to offer excellent services.</p>
         <button class="buttonGet">GET IN TOUCH</button>
         <button class="buttonRead">READ MORE</button>
       </div>
@@ -34,6 +35,10 @@
 <script>
 
 import HeaderBottom from '../components/HeaderBottom.vue'
+/* import specific icons */
+  
+
+  
 
 export default {
   name: 'HeaderComp',
@@ -110,7 +115,7 @@ export default {
   .contaierLista{
     display: flex;
     flex-direction: row;
-    padding-right: 20px;
+    
     padding-left: 100px;
   }
   .containerInferiore{
@@ -118,13 +123,22 @@ export default {
     margin: auto;
     color: white;
     text-align: center;
-    padding-bottom: 250px;
+    padding-bottom: 200px;
     .buttonGet{
       color: white;
       background-color: rgba(5, 130, 131, 1);
-      padding: 12px 20px;
+      padding: 15px 20px;
       border-radius: 5px;
       margin-right: 20px;
+    }
+    .wordBack{
+      background: rgba(5, 130, 131, 0.2);
+      padding: 5px;
+    }
+
+    .parag{
+      padding: 0 150px;
+      padding-bottom: 40px;
     }
     .buttonRead{
       color: white;
@@ -134,7 +148,8 @@ export default {
       border-radius: 5px;
     }
     h1{
-      font-size: 3rem;
+      font-size: 4rem;
+      font-weight: bold;
     }
   }
 
