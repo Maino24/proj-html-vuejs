@@ -1,7 +1,7 @@
 <template>
         <ul class="cl">
             <li class="lista">{{headerMenu.name}}</li>
-        </ul>
+        </ul> 
 </template>
 
 <script>

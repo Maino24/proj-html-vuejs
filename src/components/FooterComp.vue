@@ -5,7 +5,7 @@
         {{footer.piracy}} 
       </div>
       <div class="colonnaDestraFooter">
-        <!--- icona -->
+        <i class="fa-regular fa-copyright"></i>
         {{footer.year}}
         <span class="word">{{footer.codings}}</span>
         <span>{{footer.point}}</span>

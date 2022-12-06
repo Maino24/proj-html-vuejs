@@ -1,13 +1,16 @@
 <template>
   <div class="containerMain">
 
-    <div class="backgroundSecUno"> 
+    <!--- SEC. UNO -->
+    <SecUnoComp/>
+   <!--- <div class="backgroundSecUno"> 
       <div class="cardSecUno">
         <SecUnoComp v-for="(elem, index) in arraySecUno"
         :key="index"
         :arrayCardSecUno="elem"/>
       </div>
-    </div>
+    </div>-->
+
     <div class="backgroundSecDue">
       
         <div class="colonnaSinistra">
@@ -72,9 +75,9 @@
         <div class="colonnaSinistra8">
           <img class="logoImg" src="../assets/logo-light.png" alt="">
           <div class="divSpace1">A Functional HTML Template for Corporate & Business.</div>
-          <div class="divSpace">+1 (305) 1234-5678</div>
-          <div class="divSpace">hello@example.com</div>
-          <div class="divSpace">Main Avenue, 987</div>
+          <div class="divSpace"><i class=" ispace fa-solid fa-phone"></i>+1 (305) 1234-5678</div>
+          <div class="divSpace"><i class=" ispace fa-solid fa-envelope"></i>hello@example.com</div>
+          <div class="divSpace"><i class=" ispace fa-solid fa-location-dot"></i>Main Avenue, 987</div>
           <button class="button8">GET IN TOUCH</button>       
         </div>
         <div class="colonnaDestra8">
@@ -119,9 +122,9 @@ export default {
   data( ){
     return{
        arraySecUno:[
-          {name: 'Human Capital', paragrafo: 'Humanizing  business: Harness the power of technology to improve the way people work.'},
-          {name: 'Core Business', paragrafo: 'Ita takes innovative approaches to transform, modernize, and run existig platforms.'},
-          {name: 'Performance', paragrafo: 'Achieving maximum impact and value from investments in finance and supply chain.'}
+          {font: 'fa-solid fa-users', name: 'Human Capital', paragrafo: 'Humanizing  business: Harness the power of technology to improve the way people work.'},
+          {font: 'fa-regular fa-circle', name: 'Core Business', paragrafo: 'Ita takes innovative approaches to transform, modernize, and run existig platforms.'},
+          {font: 'fa-solid fa-gauge', name: 'Performance', paragrafo: 'Achieving maximum impact and value from investments in finance and supply chain.'}
        ],
        arraySecDue:[
           {name: 'Tradition', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
@@ -170,7 +173,7 @@ export default {
   width: 100%;
 
   /*-- SEC. UNO --*/
-  .backgroundSecUno{
+ /* .backgroundSecUno{
       background-color: rgba(238, 244, 237, 1);  
 
       .cardSecUno{
@@ -179,7 +182,7 @@ export default {
         display: flex;
         padding: 60px 0;
       }
-  }
+  }*/
   /*-- SEC. DUE --*/
   .backgroundSecDue{
     width: 100%;
@@ -287,7 +290,7 @@ export default {
 
       .colonnaSinistra8{
         width: 30%;
-        color: white;
+        color: rgba(192, 196, 208, 1);
 
         .divSpace1{
           padding: 25px 0;
@@ -296,9 +299,12 @@ export default {
         .divSpace{
           padding-top: 10px;
         }
+        .ispace{
+          padding-right: 5px;
+        }
         
         .logoImg{
-          width: 80%;
+          width: 60%;
         }
          .button8{
           border: 2px solid rgba(5, 130, 131, 1);
@@ -309,9 +315,17 @@ export default {
           margin-top: 40px;
           margin-bottom: 0;
         }
+        .button8:hover{
+          border: 2px solid rgba(5, 130, 131, 1);
+          border-radius: 5px;
+          padding: 10px 20px;
+          background-color: rgba(5, 130, 131, 1);
+          color: white;
+          margin-top: 40px;
+        }
       }
       .colonnaDestra8{
-        width: 70%;
+        width: 80%;
         display: flex;
         justify-content: space-between;
       }
