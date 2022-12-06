@@ -47,7 +47,8 @@
     </div>
 
     <!--- SEC. QUATTRO -->
-    <div class="backgroundSecQuattro">
+    <SecQuattroComp/>
+   <!--- <div class="backgroundSecQuattro">
       <div class="cardSecQuattro4">
         <h5 id="">MONTHLY PLANS</h5>
         <h2>Pricing Table</h2>
@@ -58,7 +59,7 @@
               :arrayCardSecQuattro="elem"/>
         </div>
       </div>
-    </div>
+    </div>--->
 
     <!--- SEC. CINQUE -->
     <SecCinqueComp/>
@@ -140,11 +141,11 @@ export default {
           {name: 'Legal Consulting', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
           {name: 'Regulatory Risk', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
        ],
-       arraySecQuattro:[
+     /*  arraySecQuattro:[
           {name: 'Standart', price: ' 490'},
           {name: 'Professional', price: ' 890'},
           {name: 'Ultimate', price: ' 1.390'},
-       ],
+       ],*/
        arraySecCinque:[
           {img: 'news-1.jpg', name: 'Increasing creativity is possible for everyone', person: 'Andrea Miller', day: '2 Days Ago', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',},
           {img: 'news-2.jpg', name: 'Because market research is part of the business plan', person: 'Andrea Miller', day: '2 Days Ago', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
@@ -258,7 +259,7 @@ export default {
 
   }
   /*-- SEC. QUATTRO --*/
-  .backgroundSecQuattro{
+ /* .backgroundSecQuattro{
 
     background-color: rgba(238, 244, 237, 1);
 
@@ -275,7 +276,7 @@ export default {
       }
 
     }
-  }
+  }*/
   /*-- SEC. OTTO --*/
   .backgroundOtto{
     background-color: rgba(17, 17, 23, 1);

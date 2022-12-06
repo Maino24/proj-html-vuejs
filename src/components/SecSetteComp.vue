@@ -44,7 +44,6 @@
 </script>
 
 <style lang="scss" scoped>
- /*-- SEC. SEI --*/
  
   .cardSecSette7{
     padding: 100px 0;

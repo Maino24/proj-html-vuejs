@@ -100,7 +100,7 @@ export default {
   background-repeat: no-repeat;
   background-position: bottom;
   //filter: brightness(80%);
- background-blend-mode: darken;
+  background-blend-mode: darken;
  
 
   .containerContent{

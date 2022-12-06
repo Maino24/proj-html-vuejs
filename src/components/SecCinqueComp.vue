@@ -3,7 +3,7 @@
        <div class="backgroundSecCinque">
         <div class="cardSecCinque5">
             <h5 class="our">OUR EDITORIAL CONTENT</h5>
-            <h2>Latest News</h2>
+            <h2 class="title">Latest <span class="word">News</span></h2>
             <div class="pb5">
                 <p class="p5">Every week we publish content what is best in the business world.</p>  
                 <button class="b5">SEE ALL</button>    
@@ -11,15 +11,18 @@
             <div class="containerCardSecCinque">
                 <div class="cardSecCinque1">
                     <h4 class="parag">Increasing creativity is possible for everyone</h4>
+                    <p class="paragHover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <!--- <SecCinqueComp v-for="(elem, index) in arraySecCinque"
                     :key="index"
                     :arrayCardSecCinque="elem"/>-->
                 </div>
                 <div class="cardSecCinque2">
                     <h4 class="parag">Because market research is part of the business plan</h4>
+                    <p class="paragHover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="cardSecCinque3">
                     <h4 class="parag">Working from home is now a trend</h4>
+                    <p class="paragHover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div> 
         </div>
@@ -40,24 +43,37 @@
 
 <style lang="scss" scoped>
 .backgroundSecCinque{
-
+  padding: 50px 0;
     .cardSecCinque5{
       width: 60%;
       margin: auto;
       margin-bottom: 70px;
       .our{
       color: rgba(7, 155, 168, 1);
-    }
+      
+      }
+      .title{
+        font-size: 3rem;
+      }
+      .word{
+        color: rgba(7, 155, 168, 1);
+        background-color: rgba(218, 236, 237, 1);
+        padding: 10px 5px;
+        border-radius: 5px;
+      }
       .pb5{
         display: flex;
+        margin: auto;
         justify-content: space-between;
-        
+        align-items: center;
         .b5{
-          height: 20%;
           padding: 10px 20px;
           border-radius: 5px;
           background-color: rgba(5, 130, 131, 1);
           color: white;
+        }
+        .p5{
+          color: rgb(149, 153, 165);
         }
       }
 
@@ -67,21 +83,52 @@
       margin-top: 30px;
     .cardSecCinque1{
       height: 300px;
-      background-image: url(../assets/images/news-1.jpg);
+      background: rgba(0,0,0,0.5)url(../assets/images/news-1.jpg);
+      background-blend-mode: darken;
       background-size: cover;
       background-repeat: no-repeat;
       width: calc(100% / 3);
       color: white;
       border-radius: 15px;
       .parag{
-        padding-left: 20px;
-        padding-top: 200px;
+        padding: 20px;
+        padding-top: 70%;
         font-size: 1.5rem;
+        text-align: center;
+
       }
+      .paragHover{
+        display: none;
+      }
+      
+      }
+      .cardSecCinque1:hover{
+        background: rgba(0,0,0,0.5)url(../assets/images/news-1.jpg);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(0px);
+        -webkit-filter: blur(1px);
+        .paragHover{
+          display: bolck;
+          font-size: 1rem;
+          color: white;
+          
+        
+        }
+        .parag{
+        padding: 20px;
+        padding-top: 50%;
+        font-size: 1.5rem;
+        text-align: center;
+        
+      }
+
       }
       .cardSecCinque2{
-        height: 300px;
-      background-image: url(../assets/images/news-2.jpg);
+      height: 300px;
+      background: rgba(0,0,0,0.5)url(../assets/images/news-2.jpg);
+      background-blend-mode: darken;
       background-size: cover;
       background-repeat: no-repeat;
       width: calc(100% / 3);
@@ -89,23 +136,28 @@
       margin: 0 20px;
       border-radius: 15px;
       .parag{
-        padding-left: 20px;
-        padding-top: 180px;
+        padding: 20px;
+        //padding-top: 180px;
+        padding-top: 60%;
         font-size: 1.5rem;
+        text-align: center;
       }
       }
       .cardSecCinque3{
-        height: 300px;
-      background-image: url(../assets/images/news-3.jpg);
+      height: 300px;
+      background: rgba(0,0,0,0.5)url(../assets/images/news-3.jpg);
+      background-blend-mode: darken;
       background-size: cover;
       background-repeat: no-repeat;
       width: calc(100% / 3);
       color: white;
       border-radius: 15px;
       .parag{
-        padding-left: 20px;
-        padding-top: 200px;
+        padding: 20px;
+        //padding-top: 200px;
+        padding-top: 70%;
         font-size: 1.5rem;
+        text-align: center;
       }
       }
     }
