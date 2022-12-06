@@ -11,16 +11,19 @@
       </div>
     </div>-->
 
+    <!--- SEC. DUE -->
     <div class="backgroundSecDue">
       
         <div class="colonnaSinistra">
-          <h5>ABOUT THE NETWORK</h5>
-          <h2>The Company</h2>
-          <div>For 12 years we have been providing audit and warranty, financial advice, risk advice, taxens and related services to select clients.</div>
-          <div class="cardSecDue">
-            <SecDueComp v-for="(elem, index) in arraySecDue"
-            :key="index"
-            :arrayCardSecDue="elem"/>
+          <div class="widthSinistra">
+            <h5 class="our">ABOUT THE NETWORK</h5>
+            <h2 class="title"><span class="word">The</span> Company</h2>
+            <div class="parag">For 12 years we have been providing audit and warranty, financial advice, risk advice, taxens and related services to select clients.</div>
+            <div class="cardSecDue">
+              <SecDueComp v-for="(elem, index) in arraySecDue"
+              :key="index"
+              :arrayCardSecDue="elem"/>
+            </div>
           </div>
         </div>
       
@@ -30,7 +33,7 @@
     </div> 
 
     <!--- SEC. TRE -->
-    <!---<SecTreComp/>-->
+    
     <div class="backgroundSecTre">
       <div class="cardSecTre3">
         <div class="over">
@@ -39,14 +42,12 @@
           <div class="p-b3">
             <p class="p">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowed professionals. These are some options that you can hire.</p>
             <button class="b">SEE ALL</button>
-            
           </div>
         </div>
         <div class="cardSecTre">
         <SecTreComp v-for="(elem, index) in arraySecTre"
               :key="index"
               :arrayCardSecTre="elem"/>
-              
         </div>
       </div>
     </div>
@@ -133,10 +134,10 @@ export default {
           {font: 'fa-solid fa-gauge', name: 'Performance', paragrafo: 'Achieving maximum impact and value from investments in finance and supply chain.'}
        ],
        arraySecDue:[
-          {name: 'Tradition', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
-          {name: 'Security', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
-          {name: 'Certificate', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
-          {name: 'Expertise', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'}
+          {name: 'Tradition', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-medal'},
+          {name: 'Security', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-lock'},
+          {name: 'Certificate', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-pen-to-square'},
+          {name: 'Expertise', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-graduation-cap'}
        ],
        arraySecTre:[
           {name: 'Audit', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-computer'},
@@ -195,14 +196,18 @@ export default {
     width: 100%;
     display: flex;
     margin: auto;
-
+    justify-content: end;
     .colonnaSinistra{
-      width: calc(100% / 2);
-      //height: 600px;
+      width: 30%;
       text-align: left;
       padding: 130px 0;
-      padding-left: 200px;
-      padding-right: 20px;
+      //padding-left: 300px;
+      //border: 1px solid black;
+      //padding-right: 20px;
+      /*.widthSinistra{
+        width: 30%;
+        border: 1px solid black;
+      }*/
       
       .cardSecDue{
         display: flex;
@@ -210,7 +215,22 @@ export default {
         //width: calc(100% / 2);
         flex-wrap: wrap;
       }
-
+      .parag{
+        color: rgb(137, 138, 141);
+      }
+      .our{
+      color: rgba(7, 155, 168, 1);
+      font-weight: bold;
+    }
+      .word{
+      color: rgba(5, 130, 131, 1);
+      background-color: rgba(218, 236, 237, 1);
+      border-radius: 5px;
+      padding: 10px 20px;
+      }
+    .title{
+      font-size: 3rem;
+    }
     }
 
     .colonnaDestra{
