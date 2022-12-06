@@ -2,7 +2,7 @@
   <div id="app">
     <HeaderComp :headerTop="headerTop"  :headerMenu="headerMenu"/>
     <MainComp/>
-    <FooterComp/>
+    <FooterComp :footer="footer"/>
   </div>
 </template>
 
@@ -37,6 +37,13 @@ export default {
         {name: 'BLOG'},
 
       ],
+
+      footer:{
+        piracy: 'Enjoy the low price. We are tracking any intention of piracy',
+        year: '2020 NEXGEN is Proudly powered by ',
+        codings: 'Codingds',
+        point: '.'
+      }
       
       //icone
 
