@@ -30,18 +30,23 @@
     </div> 
 
     <!--- SEC. TRE -->
+    <!---<SecTreComp/>-->
     <div class="backgroundSecTre">
       <div class="cardSecTre3">
-        <h5 class="our">OUR BUSINESS AREAS</h5>
-        <h2>Excellence in Services</h2>
-        <div class="p-b3">
-          <p class="p">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowed professionals. These are some options that you can hire.</p>
-          <button class="b">SEE ALL</button>
+        <div class="over">
+          <h5 class="our">OUR BUSINESS AREAS</h5>
+          <h2 class="title">Excellence in <span class="word">Services</span></h2>
+          <div class="p-b3">
+            <p class="p">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowed professionals. These are some options that you can hire.</p>
+            <button class="b">SEE ALL</button>
+            
+          </div>
         </div>
         <div class="cardSecTre">
         <SecTreComp v-for="(elem, index) in arraySecTre"
               :key="index"
               :arrayCardSecTre="elem"/>
+              
         </div>
       </div>
     </div>
@@ -134,13 +139,14 @@ export default {
           {name: 'Expertise', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'}
        ],
        arraySecTre:[
-          {name: 'Audit', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',},
-          {name: 'Financial Advisory', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
-          {name: 'Analytics and M&A', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
-          {name: 'Midlle Marketing', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
-          {name: 'Legal Consulting', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
-          {name: 'Regulatory Risk', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'},
+          {name: 'Audit', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-computer'},
+          {name: 'Financial Advisory', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-briefcase'},
+          {name: 'Analytics and M&A', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-chart-simple'},
+          {name: 'Midlle Marketing', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-plane-departure'},
+          {name: 'Legal Consulting', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-earth-americas'},
+          {name: 'Regulatory Risk', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-box'},
        ],
+      
      /*  arraySecQuattro:[
           {name: 'Standart', price: ' 490'},
           {name: 'Professional', price: ' 890'},
@@ -236,7 +242,16 @@ export default {
 
     .our{
       color: rgba(7, 155, 168, 1);
+      font-weight: bold;
     }
+    .word{
+      color: white;
+      background-color: rgba(14, 39, 45, 1);
+      padding: 10px 20px;
+      }
+    .title{
+      font-size: 3rem;
+    }  
 
     .p-b3{
       display: flex;
@@ -245,6 +260,7 @@ export default {
       align-items: center;
       .p{
         width: 75%;
+        color: rgb(182, 185, 194);
       }
       .b{
         width: 15%;
@@ -253,6 +269,15 @@ export default {
         color: white;
         padding: 5px 8px;
         border: 3px solid rgba(13, 90, 93, 1);
+        border-radius: 5px;
+      }
+      .b:hover{
+        width: 15%;
+        height: 20%;
+        background-color: rgba(0, 166, 166, 1);
+        color: white;
+        padding: 5px 8px;
+        border: 3px solid rgba(0, 166, 166, 1);
         border-radius: 5px;
       }
     }

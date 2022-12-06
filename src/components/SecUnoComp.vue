@@ -2,6 +2,7 @@
     <div>
         <div class="backgroundSecUno"> 
             <div class="cardSecUno">
+                
                 <h2>Human Capital</h2>
                 <div>Humanizing  business: Harness the power of technology to improve the way people work.</div>
             </div>

@@ -41,7 +41,7 @@
                         <i class="iarrow fa-solid fa-arrow-right"></i>
                         <i class="icon fa-regular fa-gem"></i>
                         <h2>Ultimate</h2>
-                        <div class="price"><span>$</span><span id="number"> 1390</span><span> / mo</span></div>
+                        <div class="price"><span>$</span><span id="number"> 1.390</span><span> / mo</span></div>
                         <ul>
                             <div class="list"><li>Standard Accounting</li><i class="i fa-solid fa-check"></i></div>
                             <div class="list"><li>Platform Access</li><i class="i fa-solid fa-check"></i></div>
@@ -144,7 +144,7 @@
       }
       #number{
         font-size: 2rem;
-      }
+        }
       .list{
         display: flex;
         justify-content: space-between;
