@@ -50,6 +50,21 @@
     <!--- SEC. TRE -->
     
     <div class="backgroundSecTre">
+       <!--- PALLINI TRA SECTION -->
+      <div class="containerPallini">
+        <div class="iconFirstRow">
+          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
+        </div>
+        <div class="iconFirstRow">
+          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
+        </div>
+        <div class="iconFirstRow">
+          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
+        </div>
+        <div class="iconFirstRow">
+          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
+        </div>
+      </div>
       <div class="cardSecTre3">
         <div class="over">
           <h5 class="our">OUR BUSINESS AREAS</h5>
@@ -197,6 +212,7 @@ export default {
   box-sizing: border-box;
 }
 
+
 .containerMain{
   width: 100%;
 
@@ -237,6 +253,7 @@ export default {
       color: #C0E9E9;
       font-size: 0.5rem;
       //border: 1px solid black;
+      
     }
     .icona{
       padding-right: 5px;
@@ -287,6 +304,24 @@ export default {
     }
   }
   /*-- SEC. TRE --*/
+    .containerPallini{
+      position: relative;
+      bottom: 30px;
+      left: 95vh;
+      
+    }
+    .iconFirstRow{
+      display: flex;
+      color: #C0E9E9;
+      font-size: 0.5rem;
+      //border: 1px solid black;
+      opacity: 0.6;
+    }
+    .icona{
+      padding-right: 5px;
+      padding-top: 5px;
+    }
+
   .backgroundSecTre{
     
     background-color: rgba(17, 17, 23, 1);
