@@ -51,7 +51,7 @@
     
     <div class="backgroundSecTre">
        <!--- PALLINI TRA SECTION -->
-      <div class="containerPallini">
+      <div class="containerPallini1">
         <div class="iconFirstRow">
           <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
         </div>
@@ -246,7 +246,7 @@ export default {
       position: relative;
       bottom: 30px;
       left: 70vh;
-      
+      //border: 1px solid blue;
     }
     .iconFirstRow{
       display: flex;
@@ -305,10 +305,16 @@ export default {
   }
 
   /*-- SEC. TRE --*/
-    .containerPallini{
+    
+  .backgroundSecTre{
+    background-color: rgba(17, 17, 23, 1);
+    
+    .containerPallini1{
       position: relative;
-      bottom: 30px;
-      left: 700px;
+      bottom: 30px; 
+      border: 1px solid blue;
+      padding-right: 0;
+      margin-right: 0;
     }
     .iconFirstRow{
       display: flex;
@@ -321,8 +327,8 @@ export default {
       padding-right: 5px;
       padding-top: 5px;
     }
-  .backgroundSecTre{
-    background-color: rgba(17, 17, 23, 1);
+
+
   .cardSecTre3{
       width: 60%;
       margin: auto;

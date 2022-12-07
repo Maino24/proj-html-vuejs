@@ -18,7 +18,7 @@
 export default {
   name: 'FooterComp',
   props: {
-   footer: Array
+   footer: Object
   }
 }
 </script>

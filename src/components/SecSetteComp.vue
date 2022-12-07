@@ -44,6 +44,12 @@
 </script>
 
 <style lang="scss" scoped>
+
+*{
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
  
   .cardSecSette7{
     padding: 100px 0;

@@ -45,26 +45,6 @@ export default {
         point: '.'
       },
       
-      //icone
-
-    /*  headerBottom:{
-        logo: 'logo-light.png',
-        nav: '',
-        button1: '../assets/hover-button1.png',
-        title1: 'LEAD',
-        font: '',
-        title2:'COSTUMER',
-        paragrafo: 'Successful strategies require data analysis, creativity and costomer focus, taking advantage of the latest technologies to offer excellent services.',
-        button2: '../assets/hover-button2.png',
-        button3: '../assets/hover-button3.png'
-      },*/
-
-       
-       //es.  
-
-
-       /* ----- ARRAY SECONDA SEZIONE ----- */
-      
     }
   }
 }
@@ -76,6 +56,10 @@ export default {
   padding: 0;
   border: 0;
   box-sizing: border-box;
+}
+
+#app{
+  width: 100%;
 }
 
 

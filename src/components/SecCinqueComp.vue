@@ -63,6 +63,13 @@
 </script>
 
 <style lang="scss" scoped>
+
+*{
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
 .backgroundSecCinque{
   padding: 50px 0;
     .cardSecCinque5{
@@ -161,7 +168,7 @@
 
         .cardSecCinque1:hover .parag{
           padding: 0 20px;
-          padding-top: 90px;
+          padding-top: 20px;
           font-size: 1.5rem;
           text-align: center;
           color: white;
@@ -229,7 +236,7 @@
         
         .cardSecCinque2:hover  .parag{
           padding: 0 20px;
-          padding-top: 90px;
+          padding-top: 20px;
           font-size: 1.5rem;
           text-align: center;
         }
@@ -296,7 +303,7 @@
         
         .cardSecCinque3:hover  .parag{
           padding: 0 20px;
-          padding-top: 90px;
+          padding-top: 30px;
           font-size: 1.5rem;
           text-align: center;
         }

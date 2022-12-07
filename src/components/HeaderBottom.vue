@@ -30,8 +30,8 @@
     .lista{
         list-style: none;
         color: white;
-        font-size: 1.2rem;
-        padding:  5px;
+        font-size: 1rem;
+        padding:  10px 2px;
         
     }
 
