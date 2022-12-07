@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="containerInferiore">
-        <h1>Lead <span class="wordBack">Costumer</span></h1>
+        <h1>Lead <img class="imgTitle" src="../assets/images/screenshot.png" alt=""> <span class="wordBack">Costumer</span></h1>
         <p class="parag">Successful strategies require data analysis, creativity and costumer focus, taking advantage of the latest technologies to offer excellent services.</p>
         <button class="buttonGet">GET IN TOUCH</button>
         <button class="buttonRead">READ MORE</button>
@@ -101,7 +101,10 @@ export default {
   background-position: bottom;
   //filter: brightness(80%);
   background-blend-mode: darken;
- 
+
+  .imgTitle{
+    padding-bottom: 10px;
+  }
 
   .containerContent{
     width: 60%;
