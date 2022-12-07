@@ -31,6 +31,22 @@
         </div>
       </div>  
 
+
+      <div class="containerPallini1">
+        <div class="iconFirstRow">
+          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
+        </div>
+        <div class="iconFirstRow">
+          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
+        </div>
+        <div class="iconFirstRow">
+          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
+        </div>
+        <div class="iconFirstRow">
+          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
+        </div>
+      </div>
+
         <div class="colonnaSinistra">
           <div class="widthSinistra">
             <h5 class="our">ABOUT THE NETWORK</h5>
@@ -50,21 +66,7 @@
     <!--- SEC. TRE -->
     
     <div class="backgroundSecTre">
-       <!--- PALLINI TRA SECTION -->
-      <div class="containerPallini1">
-        <div class="iconFirstRow">
-          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
-        </div>
-        <div class="iconFirstRow">
-          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
-        </div>
-        <div class="iconFirstRow">
-          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
-        </div>
-        <div class="iconFirstRow">
-          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
-        </div>
-      </div>
+      
       <div class="cardSecTre3">
         <div class="over">
           <h5 class="our">OUR BUSINESS AREAS</h5>
@@ -124,8 +126,6 @@
         </div>
       </div>
     </div>
-    
-   
 
   </div> 
 </template>
@@ -245,7 +245,7 @@ export default {
     .containerPallini{
       position: relative;
       bottom: 30px;
-      left: 70vh;
+      left: 85vh;
       //border: 1px solid blue;
     }
     .iconFirstRow{
@@ -259,6 +259,15 @@ export default {
       padding-right: 5px;
       padding-top: 5px;
     }
+    .containerPallini1{
+      position: relative;
+      top: 680px; 
+      left: 70vh;
+      //border: 1px solid blue;
+      padding-right: 0;
+      margin-right: 0;
+    }
+   
     .colonnaSinistra{
       width: 30%;
       text-align: left;
@@ -308,26 +317,6 @@ export default {
     
   .backgroundSecTre{
     background-color: rgba(17, 17, 23, 1);
-    
-    .containerPallini1{
-      position: relative;
-      bottom: 30px; 
-      border: 1px solid blue;
-      padding-right: 0;
-      margin-right: 0;
-    }
-    .iconFirstRow{
-      display: flex;
-      color: #C0E9E9;
-      font-size: 0.5rem;
-      //border: 1px solid black;
-      opacity: 0.6;
-    }
-    .icona{
-      padding-right: 5px;
-      padding-top: 5px;
-    }
-
 
   .cardSecTre3{
       width: 60%;
