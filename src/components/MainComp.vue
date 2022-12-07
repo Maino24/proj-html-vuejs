@@ -303,12 +303,12 @@ export default {
       //height: 600px;
     }
   }
+
   /*-- SEC. TRE --*/
     .containerPallini{
       position: relative;
       bottom: 30px;
-      left: 95vh;
-      
+      left: 700px;
     }
     .iconFirstRow{
       display: flex;
@@ -321,11 +321,8 @@ export default {
       padding-right: 5px;
       padding-top: 5px;
     }
-
   .backgroundSecTre{
-    
     background-color: rgba(17, 17, 23, 1);
-
   .cardSecTre3{
       width: 60%;
       margin: auto;
@@ -383,6 +380,7 @@ export default {
     }
 
   }
+  
   /*-- SEC. QUATTRO --*/
  /* .backgroundSecQuattro{
 
@@ -457,7 +455,6 @@ export default {
       }
     }
   }
- 
  
 }
 </style>

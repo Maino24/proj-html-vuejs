@@ -9,18 +9,39 @@
                 <button class="b5">SEE ALL</button>    
             </div> 
             <div class="containerCardSecCinque">
+
                 <div class="cardSecCinque1">
+                  <div class="user-day">
+                    <i class="fa-regular fa-user"></i>
+                    <div class="nameD">Andrea Miller</div>
+                    <i class="nameD1 fa-regular fa-clock"></i>
+                    <div >2 Days Ago</div>
+                  </div>
                     <h4 class="parag">Increasing creativity is possible for everyone</h4>
                     <p class="paragHover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <!--- <SecCinqueComp v-for="(elem, index) in arraySecCinque"
                     :key="index"
                     :arrayCardSecCinque="elem"/>-->
                 </div>
+                
                 <div class="cardSecCinque2">
+                   <div class="user-day">
+                    <i class="fa-regular fa-user"></i>
+                    <div class="nameD">Andrea Miller</div>
+                    <i class="nameD1 fa-regular fa-clock"></i>
+                    <div >2 Days Ago</div>
+                  </div>
                     <h4 class="parag">Because market research is part of the business plan</h4>
                     <p class="paragHover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
+
                 <div class="cardSecCinque3">
+                  <div class="user-day">
+                    <i class="fa-regular fa-user"></i>
+                    <div class="nameD">Andrea Miller</div>
+                    <i class="nameD1 fa-regular fa-clock"></i>
+                    <div >2 Days Ago</div>
+                  </div>
                     <h4 class="parag">Working from home is now a trend</h4>
                     <p class="paragHover">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
@@ -81,6 +102,8 @@
       display: flex;
       justify-content: space-between;
       margin-top: 30px;
+
+      /* ----- CARD UNO ---*/
     .cardSecCinque1{
       height: 300px;
       background: rgba(0,0,0,0.5)url(../assets/images/news-1.jpg);
@@ -90,16 +113,31 @@
       width: calc(100% / 3);
       color: white;
       border-radius: 15px;
+      padding: 10px;
+      .user-day{
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        display: none;
+        .nameD{
+          padding: 0 20px;
+        }
+        .nameD1{
+          padding: 0 10px;
+        }
+      }
       .parag{
         padding: 0 20px;
-        padding-top: 200px;
+        padding-top: 150px;
         font-size: 1.5rem;
         text-align: center;
+        color: white;
       }
-      /*.paragHover{
+      .paragHover{
         display: none;
-      }*/
       }
+      }
+      /* ----- CARD UNO HOVER ---*/
       .cardSecCinque1:hover{
         background: rgba(0,0,0,0.5)url(../assets/images/news-1.jpg);
         background-blend-mode: darken;
@@ -107,21 +145,30 @@
         background-repeat: no-repeat;
         filter: blur(0px);
         -webkit-filter: blur(1px);
-        /*.paragHover{
-          display: bolck;
-          font-size: 1rem;
+        
+      }
+      .cardSecCinque1:hover .user-day{
+          display: flex;
+          //font-size: 1rem;
           color: white;
-        }*/
-          .parag{
+          
+        }
+      .cardSecCinque1:hover .paragHover {
+          display: flex;
+          //font-size: 1rem;
+          color: white;
+        }
+
+        .cardSecCinque1:hover .parag{
           padding: 0 20px;
-          padding-top: 130px;
+          padding-top: 90px;
           font-size: 1.5rem;
           text-align: center;
+          color: white;
         }
-      }
+          
 
-
-
+      /* ----- CARD DUE ---*/
       .cardSecCinque2{
       height: 300px;
       background: rgba(0,0,0,0.5)url(../assets/images/news-2.jpg);
@@ -132,31 +179,65 @@
       color: white;
       margin: 0 20px;
       border-radius: 15px;
+      padding: 10px;
         .parag{
           padding: 20px;
           //padding-top: 180px;
           padding-top: 150px;
           font-size: 1.5rem;
           text-align: center;
+          color: white;
+        }
+        .paragHover{
+        display: none;
+      }
+      .user-day{
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        display: none;
+        .nameD{
+          padding: 0 20px;
+        }
+        .nameD1{
+          padding: 0 10px;
         }
       }
+      }
+      /* ----- CARD DUE HOVER ---*/
       .cardSecCinque2:hover{
       height: 300px;
       background: rgba(0,0,0,0.5)url(../assets/images/news-2.jpg);
       background-blend-mode: darken;
-        background-size: cover;
-        background-repeat: no-repeat;
-        filter: blur(0px);
-        -webkit-filter: blur(1px);
-        .parag{
+      background-size: cover;
+      background-repeat: no-repeat;
+      filter: blur(0px);
+      -webkit-filter: blur(1px);
+        }
+
+        .cardSecCinque2:hover .user-day{
+          display: flex;
+          //font-size: 1rem;
+          color: white;
+        }
+        
+      .cardSecCinque2:hover .paragHover {
+          display: flex;
+          font-size: 1rem;
+          color: white;
+        }
+        
+        .cardSecCinque2:hover  .parag{
           padding: 0 20px;
-          padding-top: 100px;
+          padding-top: 90px;
           font-size: 1.5rem;
           text-align: center;
         }
-        }
 
 
+
+
+      /* ----- CARD TRE ---*/
       .cardSecCinque3{
       height: 300px;
       background: rgba(0,0,0,0.5)url(../assets/images/news-3.jpg);
@@ -166,14 +247,31 @@
       width: calc(100% / 3);
       color: white;
       border-radius: 15px;
+      padding: 10px;
       .parag{
         padding: 0 20px;
-        padding-top: 200px;
+        padding-top: 150px;
         //padding-top: 70%;
         font-size: 1.5rem;
         text-align: center;
       }
+      .paragHover{
+        display: none;
       }
+      .user-day{
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        display: none;
+        .nameD{
+          padding: 0 20px;
+        }
+        .nameD1{
+          padding: 0 10px;
+        }
+      }
+      }
+      /* ----- CARD TRE HOVER ---*/
       .cardSecCinque3:hover{
       height: 300px;
       background: rgba(0,0,0,0.5)url(../assets/images/news-3.jpg);
@@ -182,14 +280,28 @@
         background-repeat: no-repeat;
         filter: blur(0px);
         -webkit-filter: blur(1px);
-      .parag{
-        padding: 0 20px;
-        padding-top: 130px;
-        //padding-top: 50%;
-        font-size: 1.5rem;
-        text-align: center;
       }
-      }
+
+      .cardSecCinque3:hover .user-day{
+          display: flex;
+          //font-size: 1rem;
+          color: white;
+        }
+        
+      .cardSecCinque3:hover .paragHover {
+          display: flex;
+          font-size: 1rem;
+          color: white;
+        }
+        
+        .cardSecCinque3:hover  .parag{
+          padding: 0 20px;
+          padding-top: 90px;
+          font-size: 1.5rem;
+          text-align: center;
+        }
+
+        
     }
       
 
