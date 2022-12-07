@@ -17,13 +17,11 @@
     <div id="containerHeaderBottom">
       <div class="containerContent">
         <img id="logoH" src="../assets/logo-light.png" alt="">
-        
         <div class="contaierLista">
           <HeaderBottom
             v-for="(elem, index) in headerMenu" 
             :key="index"
             :headerMenu='elem'/>
-        
         <button class="buttonGet">GET IN TOUCH</button>
         </div>
       </div>
@@ -79,7 +77,6 @@ export default {
     margin: auto;
     justify-content: space-between;
     padding: 15px 0;
-    
   }
   .contattiRight{
     display: flex;
@@ -90,22 +87,17 @@ export default {
     padding-right: 10px;
     padding-left: 10px;
   }
-
 }
 
 #containerHeaderBottom{
-  //height: 600px;
   background: rgba(0,0,0,0.7)url(../assets/hero-image.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  //filter: brightness(80%);
   background-blend-mode: darken;
-
   .imgTitle{
     padding-bottom: 10px;
   }
-
   .containerContent{
     width: 60%;
     margin: auto;
@@ -121,16 +113,12 @@ export default {
       border-radius: 5px;
     }
   }
-
   #logoH{
     width: 150px;
-    //border: 2px solid black;
   }
-
   .contaierLista{
     display: flex;
     flex-direction: row;
-    
     padding-left: 100px;
   }
   .containerInferiore{
@@ -150,11 +138,11 @@ export default {
       background: rgba(5, 130, 131, 0.2);
       padding: 5px;
     }
-
     .parag{
       padding: 0 140px;
       padding-bottom: 40px;
       font-size: 1.2rem;
+      color: rgba(165, 167, 179, 1);
     }
     .buttonRead{
       color: white;
@@ -168,14 +156,12 @@ export default {
       background-color: rgba(5, 130, 131, 1);
       //padding: 15px 20px;
       border-radius: 5px;
-      
     }
     h1{
       font-size: 5rem;
       font-weight: bold;
     }
   }
-
 }
 
 

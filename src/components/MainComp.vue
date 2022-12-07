@@ -14,6 +14,23 @@
     <!--- SEC. DUE -->
     
     <div class="backgroundSecDue">
+
+      <!--- PALLINI TRA SECTION -->
+      <div class="containerPallini">
+        <div class="iconFirstRow">
+          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
+        </div>
+        <div class="iconFirstRow">
+          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
+        </div>
+        <div class="iconFirstRow">
+          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
+        </div>
+        <div class="iconFirstRow">
+          <div v-for="elem, index in 9" :key="index"><i class="icona" :class="`${iconaImg.icone}`"></i></div>
+        </div>
+      </div>  
+
         <div class="colonnaSinistra">
           <div class="widthSinistra">
             <h5 class="our">ABOUT THE NETWORK</h5>
@@ -137,6 +154,11 @@ export default {
           {name: 'Certificate', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-pen-to-square'},
           {name: 'Expertise', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-graduation-cap'}
        ],
+
+        iconaImg: {
+          icone: 'fa-solid fa-circle'
+        },
+
        arraySecTre:[
           {name: 'Audit', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-computer'},
           {name: 'Financial Advisory', paragrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.', icona: 'fa-solid fa-briefcase'},
@@ -204,6 +226,22 @@ export default {
     display: flex;
     margin: auto;
     justify-content: end;
+    .containerPallini{
+      position: relative;
+      bottom: 30px;
+      left: 70vh;
+      
+    }
+    .iconFirstRow{
+      display: flex;
+      color: #C0E9E9;
+      font-size: 0.5rem;
+      //border: 1px solid black;
+    }
+    .icona{
+      padding-right: 5px;
+      padding-top: 5px;
+    }
     .colonnaSinistra{
       width: 30%;
       text-align: left;

@@ -91,16 +91,14 @@
       color: white;
       border-radius: 15px;
       .parag{
-        padding: 20px;
-        padding-top: 70%;
+        padding: 0 20px;
+        padding-top: 200px;
         font-size: 1.5rem;
         text-align: center;
-
       }
-      .paragHover{
+      /*.paragHover{
         display: none;
-      }
-      
+      }*/
       }
       .cardSecCinque1:hover{
         background: rgba(0,0,0,0.5)url(../assets/images/news-1.jpg);
@@ -109,22 +107,21 @@
         background-repeat: no-repeat;
         filter: blur(0px);
         -webkit-filter: blur(1px);
-        .paragHover{
+        /*.paragHover{
           display: bolck;
           font-size: 1rem;
           color: white;
-          
-        
+        }*/
+          .parag{
+          padding: 0 20px;
+          padding-top: 130px;
+          font-size: 1.5rem;
+          text-align: center;
         }
-        .parag{
-        padding: 20px;
-        padding-top: 50%;
-        font-size: 1.5rem;
-        text-align: center;
-        
       }
 
-      }
+
+
       .cardSecCinque2{
       height: 300px;
       background: rgba(0,0,0,0.5)url(../assets/images/news-2.jpg);
@@ -135,14 +132,31 @@
       color: white;
       margin: 0 20px;
       border-radius: 15px;
-      .parag{
-        padding: 20px;
-        //padding-top: 180px;
-        padding-top: 60%;
-        font-size: 1.5rem;
-        text-align: center;
+        .parag{
+          padding: 20px;
+          //padding-top: 180px;
+          padding-top: 150px;
+          font-size: 1.5rem;
+          text-align: center;
+        }
       }
-      }
+      .cardSecCinque2:hover{
+      height: 300px;
+      background: rgba(0,0,0,0.5)url(../assets/images/news-2.jpg);
+      background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(0px);
+        -webkit-filter: blur(1px);
+        .parag{
+          padding: 0 20px;
+          padding-top: 100px;
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        }
+
+
       .cardSecCinque3{
       height: 300px;
       background: rgba(0,0,0,0.5)url(../assets/images/news-3.jpg);
@@ -153,9 +167,25 @@
       color: white;
       border-radius: 15px;
       .parag{
-        padding: 20px;
-        //padding-top: 200px;
-        padding-top: 70%;
+        padding: 0 20px;
+        padding-top: 200px;
+        //padding-top: 70%;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      }
+      .cardSecCinque3:hover{
+      height: 300px;
+      background: rgba(0,0,0,0.5)url(../assets/images/news-3.jpg);
+      background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(0px);
+        -webkit-filter: blur(1px);
+      .parag{
+        padding: 0 20px;
+        padding-top: 130px;
+        //padding-top: 50%;
         font-size: 1.5rem;
         text-align: center;
       }
